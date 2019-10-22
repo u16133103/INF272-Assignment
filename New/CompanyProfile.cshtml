@@ -1,0 +1,19 @@
+﻿<style>
+    body {
+        background-color: cadetblue;
+    }
+</style>
+@{
+    ViewBag.Title = "CompanyProfile";
+}
+
+<h2>Welcome to JobTinder... </h2>
+
+@if (Request.IsAuthenticated)
+{
+    @HttpContext.Current.User.Identity.Name
+    <a href='@Url.Action("LogOut", "UserDash")' onclick='navigate(this.href);'>
+        <input style="float: right;" type="button" value='Logout' />
+    </a>
+} 
+

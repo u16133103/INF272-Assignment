@@ -1,0 +1,34 @@
+﻿<style>
+    body {
+        background-color: cadetblue;
+    }
+</style>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>JOB TINDER</h2>
+    <input type="button" name="Home" value="Home" onclick="location.href='@Url.Action("Homepage","Register")'" />
+    <input type="button" name="Companies" value="Companies" onclick="location.href='@Url.Action("Login","Register")'" />
+    <input type="button" name="JobSeeker" value="Job Seeker" onclick="location.href='@Url.Action("Login","JobSeeker")'" /><br />
+
+    <h1 style="text-align:center">Make moves...</h1>
+    <h4 style="text-align:center">the future is on your fingertips with Job Tinder!</h4><br /><br />
+</div>
+<div class="row">
+
+    <h2>Creaters of the website are:</h2>
+
+    <div class="col-md-3">
+        <img src="~/images/polaki.jpg" width="100" height="100" alt="Tina" />
+        <p>Polaki Mamphekuli in Information Systems</p>
+
+    </div>
+    <div class="col-md-3">
+        <img src="~/images/karim.png" width="100" height="100" alt="Portia" />
+        <p>Karim Portia in Information Systems</p>
+
+    </div>
+</div>
